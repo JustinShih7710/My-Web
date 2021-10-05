@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectorPriority</title>
+    <style>
+        div {
+            color:yellow
+        }
+        h2{
+            color:brown
+        }
+        .hclass{
+            color:purple
+        }
+        #hid{
+            color:gray
+        }
+        #hid{
+            color:green
+        }
+    </style>
+    <link rel="stylesheet" href="css/selector2.css">
+</head>
+<body>
+    <div style="color:red">CCU</div><!-- inline --> 
+    <h2 style="color:red" id="hid" class="hclass">MIS</h2>
+</body>
+</html>
