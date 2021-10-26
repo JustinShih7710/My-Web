@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloJS3</title>
+    <style>
+        table {
+            border:5px solid black
+        }
+        th,td{
+            border:3px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><th>MIS</th><th>CS</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="MIS">Java</td><td class="CS">C</td></tr>
+            <tr><td class="MIS">MIS</td><td class="CS">Linear Algebra</td></tr>
+            <tr><td class="MIS">Economics</td><td class="CS">Algorithms</td></tr>
+        </tbody>
+        <script>
+            var list1=document.querySelector(".MIS");
+            console.log(list1);
+            var list2=document.querySelectorAll(".CS");
+            console.log(list2);
+            console.log(list2[1]);
+        </script>
+    </table>
+</body>
+</html>
