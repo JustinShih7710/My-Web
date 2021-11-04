@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+        //1
+        var div = document.getElementById("div1")
+        var p =document.createElement("p")
+        p.innerHTML="CCU"
+        div.appendChild(p)
+        //2
+        var list = ["Chiayi", " Minhsiung"," 621"]
+        list.forEach(v => {
+            var span = document.createElement("span")
+            span.innerHTML = v
+            div.appendChild(span)
+        });
+        //3
+        var div = document.getElementById("div2")
+        var p =document.createElement("p")
+        p.innerHTML="MIS"
+        div.appendChild(p)
+        //4
+        var p =document.createElement("h4")
+        p.innerHTML="Webpage Design"
+        div.appendChild(p)
+    </script>
+</body>
+</html>
