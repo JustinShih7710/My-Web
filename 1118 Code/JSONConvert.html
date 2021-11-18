@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONConvert</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,[11,12,13]];
+        var str=JSON.stringify(arr);
+        console.log(str);
+        console.log(typeof str);
+
+        var obj={"Name":"Thunder", "State":"Oklahoma"};
+        var str=JSON.stringify(obj);
+        console.log(str);
+        console.log(typeof str);
+
+        var str="[1,2,3,[11,12,13]]";
+        var arr=JSON.parse(str);
+        console.log(arr);
+        console.log(typeof arr);
+        console.log(arr[0]);
+        console.log(arr[3][1]);
+
+        var str2="{\"Name\":\"Thunder\", \"State\":\"Oklahoma\"}";
+        var obj=JSON.parse(str2);
+        console.log(obj);
+        console.log(typeof obj);
+        console.log(obj.Name);
+        console.log(obj.State);
+    </script>
+</body>
+</html>
