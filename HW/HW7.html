@@ -9,7 +9,11 @@
 <body>
     <script>
         (function(a,b){
-            alert('sum='+(a+b));
+            var sum=0;
+            for(let i = a;i<=b;i++){
+                sum+=i;
+            }
+            alert('sum='+sum);
         }(1,100));
     </script>
 </body>
