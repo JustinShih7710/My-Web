@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentFilter</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div>Chiayi
+        <div>i CCU
+            <p>ii MIS</p>
+            <p>ii CS</p>
+            <p>ii Math</p>
+        </div>
+        <p></p>
+    </div>
+    <div>Taichung
+        <p>i Math</p>
+        <p>i Statistics</p>
+        <p>i Data Science</p>
+    </div>
+    <p></p>
+    <p>Taoyuan</p>
+    <script>
+        $("p:contains('Math')").css("color","orange");
+        // $("div:has(p)").css("background-color","yellow");
+    </script>
+</body>
+</html>

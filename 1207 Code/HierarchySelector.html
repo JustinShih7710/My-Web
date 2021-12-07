@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HierarchySelector</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div id="div1">Chiayi
+        <div>i Coding
+            <p>ii MIS</p>
+            <p>ii CS</p>
+            <p>ii EE</p>
+        </div>
+        <p>i Education</p>
+    </div>
+    <div id="div2">Taichung
+        <p>i Math</p>
+        <p>i Statistics</p>
+        <p>i Data Science</p>
+    </div>
+    <p>Tainan</p>
+    <p>Taoyuan</p>
+    <script>
+        $("#div2>p").css("background-color","#888888");
+        // $("#div1 p").css("background-color","#CCCCCC");
+        // $("div+p").css("color","red");
+        // $("div~p").css("background-color","#CCCC00");
+    </script>
+</body>
+</html>

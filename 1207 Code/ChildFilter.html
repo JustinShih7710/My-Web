@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildFilter</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div>CCU
+        <p>MIS</p>
+        <p>CS</p>
+        <p>EE</p>
+    </div>
+    <div>NCHU
+        <p>Math</p>
+        <p>Statistics</p>
+        <p>Data Science</p>
+    </div>
+    <script>
+        $("div p:first-child").css("background-color","orange");
+        $("div p:last-child").css("background-color","yellow");
+        $("div p:nth-child(2)").css("color","red");
+    </script>
+</body>
+</html>
