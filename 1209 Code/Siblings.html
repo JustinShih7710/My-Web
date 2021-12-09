@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div id="Chia">Chiayi
+        <div>i Coding
+            <p id="BA">ii MIS</p>
+            <p>ii CS</p>
+            <p>ii EE</p>
+        </div>
+        <p>i Education</p>
+    </div>
+    <p class="north">Taipei</p>
+    <p>Keelung</p>
+    <p>Hsinchu</p>
+    <div id="ChungHsing">Taichung
+        <p>i Math</p>
+        <p>i Statistics</p>
+        <p>i Data Science</p>
+    </div>
+    <p>New Taipei</p>
+    <p>Hualien</p>
+    <p class="south">Tainan</p>
+    <p>Taoyuan</p>
+    <script>
+        $("#Chia").siblings().css("background-color","orange");
+        // $("#Chia").siblings("div").css("background-color","orange");
+    </script>
+</body>
+</html>

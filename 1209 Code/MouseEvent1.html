@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvent1</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <h1 id="onclick">Left Click</h1>
+    <h1 id="ondblclick">Double Click</h1>
+    <h1 id="oncontextmenu">Right Click</h1>
+    <script>
+        $("#onclick").click(function(event){
+            alert("left click!");
+        });
+        $("#ondblclick").dblclick(function(event){
+            alert("double click!");
+        });
+        $("#oncontextmenu").contextmenu(function(event){
+            alert("right click!");
+        });
+    </script>
+</body>
+</html>
