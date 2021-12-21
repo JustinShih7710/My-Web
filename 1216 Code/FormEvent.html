@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormEvent</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <label for="guest">Name:</label>
+        <input type="text" id="guest" name="guest" value="Mike">
+        <br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" maxlength="6">
+        <br>
+        <label for="opinion">Opinion:</label>
+        <textarea cols="40" rows="5" id="opinion" name="opinion"></textarea>
+        <br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <input type="checkbox" name="ballgame" value="baseball">Baseball
+        <input type="checkbox" name="ballgame" value="basketball">Basketball
+        <input type="checkbox" name="ballgame" value="soccer">Soccer
+        <br>
+        <select id="Course">
+            <option value="Web" selected>Webpage Design</option>
+            <option value="CS">Introduction to Computer</option>
+            <option value="Network">Business Data Communications</option>
+        </select>
+        <br>
+        <label class="picture"> Picture:</label><input type="file" name="file">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <script>
+        $("form").submit(function(event){
+            alert("submit!");
+        });
+        $("#pwd").focus(function(event){
+            alert("enter!");
+        });
+        $("#guest").blur(function(event){
+            alert("leave!");
+        });
+        $("#Course").change(function(event){
+            alert("changed!");
+        });
+    </script>
+</body>
+</html>

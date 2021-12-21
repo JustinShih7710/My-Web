@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowEvent2</title>
+    <style>
+        img {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            float: left;
+        }
+
+        #div1 {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <img id="img1" src="images/okc.jpg">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+         $(document).ready(function () { // 網頁載入後立即執行
+            moving(); // 一開始須執行一次
+            $(window).resize(moving);
+
+            function moving() {
+                let windowHeight = $(this).height();
+                let windowWidth = $(this).width();
+
+                let imgHeight = $("#div1").height();
+                let imgWidth = $("#div1").width();
+
+                let top = (windowHeight - imgHeight) / 2
+                let left = (windowWidth - imgWidth) / 2;
+
+                $("#div1").css("top", top).css("left", left);
+            }
+        });
+        
+    </script>
+</body>
+
+</html>
