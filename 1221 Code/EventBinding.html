@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBinding</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <h1 id="headingA">heading A</h1>
+    <h1 id="headingB">heading B</h1>
+    <script>
+        $("#headingA").on({
+            click: function(){
+                alert("left click heading A");
+            },
+            contextmenu: function(){
+                alert("right click heading A");
+            }
+        });
+        $("#headingB").one("click",function(){
+            alert("left click heading B");
+        });
+    </script>
+</body>
+</html>
