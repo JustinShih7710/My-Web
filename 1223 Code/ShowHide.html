@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowHide</title>
+    <style>
+        .class1{
+            background-color: red;
+        }
+        .class2{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <input type="button" id="Show" value="show">
+    <input type="button" id="Hide" value="hide">
+    <input type="button" id="Toggle" value="toggle">
+    <div class="class1" id="HTML5">HTML</div>
+    <div class="class2" id="CSS3">CSS</div>
+    <script>
+        $("#Show").click(function(event){
+            $("#HTML5").show("slow");
+        });
+        $("#Hide").click(function(event){
+            $("#HTML5").hide("fast");
+        });
+        $("#Toggle").click(function(event){
+            $("#CSS3").toggle("linear");
+        });
+    </script>
+</body>
+</html>

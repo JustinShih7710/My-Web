@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassDesigning</title>
+    <style>
+        .class1{
+            background-color: red;
+        }
+        .class2{
+            background-color: orange;
+        }
+        .class3{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div id="HTML5">HTML</div>
+    <div class="class2" id="CSS3">CSS</div>
+    <div id="JS">JavaScript</div>
+    <script>
+        $("#HTML5").click(function(event){
+            $(this).addClass("class1");
+        });
+        $("#CSS3").click(function(event){
+            $(this).removeClass("class2");
+        });
+        $("#JS").click(function(event){
+            $(this).toggleClass("class3");
+            if($(this).hasClass("class3")){
+                alert("has class 3!");
+            }
+        })
+    </script>
+</body>
+</html>

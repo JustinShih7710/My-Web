@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <img src="images/okc.jpg">
+    <input type="button" id="Show" value="show">
+    <input type="button" id="Hide" value="hide">
+    <input type="button" id="Toggle" value="toggle">
+    <input type="button" id="FadeTo" value="fadeTo">
+    
+    <script>
+        $("#Show").click(function(event){
+            $("img").fadeIn("linear");
+        });
+        $("#Hide").click(function(event){
+            $("img").fadeOut("linear");
+        });
+        $("#Toggle").click(function(event){
+            $("img").fadeToggle("slow");
+        });
+        $("#FadeTo").click(function(event){
+            $("img").fadeTo(2000,0.5);
+        });
+    </script>
+</body>
+</html>
